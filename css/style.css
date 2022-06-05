@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #ffffff;
+    filter: drop-shadow(1px 1.732px 2.5px rgba(0,0,0,0.15));
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 28px;
+
+}
+
+.home_pages {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.home_pages > li {
+    padding-left: 46px;
+    position: relative;
+}
+
+.home_pages > li > a {
+    text-decoration: none;
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.home_pages > li:nth-child(1) > a {
+    color: #000000;
+}
+
+.home_pages > li:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+}
+
+.home_pages > li > a:hover {
+    color: #000000;
+}
+
+.catalog {
+    margin-top: 33px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 0px;
+    margin-bottom: 29px;
+}
+
+.catalog > li {
+    padding-left: 23px;
+    margin-left: 23px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.catalog > li > a:hover {
+    color: #000000;
+}
+
+.catalog > li > a {
+    text-transform: uppercase;
+    color: #777777;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.catalog > li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #777777;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    transform: rotate(15deg);
+}
+
+.catalog > li:nth-child(1)::before{
+    display: none;
+}
+
+.catalog > li:nth-child(1) > a {
+    color: #000000;
+}
+
+.slider {
+    background-image: url(../images/home/shutterstock.png);
+    padding-top: 263px;
+    padding-bottom: 280px;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: 50% 50%;
+}
+
+.slider_text > h1 {
+    margin-top: 0px;
+    margin-bottom: 38px;
+    background-color: black;
+    color: white;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.slider_text > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.slider_text {
+    text-align: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: repeat(24, 50px);
+    justify-content: center;
+    grid-column-gap: 30px;
+}
+
+.images > div {
+    margin-bottom: 30px;
+}
+
+.images > div:nth-child(1) {
+    background-image: url(../images/home/image_01.png);
+    grid-column: 1/2;
+    grid-row: 1/8;
+    background-position: 50% 50%;
+    margin-bottom: 30px;
+}
+
+.images > div:nth-child(2) {
+    background-image: url(../images/home/image_02.png);
+    grid-column: 2/3;
+    grid-row: 1/6;
+    background-position: 50% 50%;
+}
+
+.images > div:nth-child(3) {
+    background-image: url(../images/home/image_03.png);
+    grid-column: 3/4;
+    grid-row: 1/10;
+    background-position: 50% 50%;
+}
+
+.images > div:nth-child(4) {
+    background-image: url(../images/home/image_04.png);
+    grid-column: 1/2;
+    grid-row: 8/13;
+    background-position: 20% 15%;
+}
+
+.images > div:nth-child(5) {
+    background-image: url(../images/home/image_05.png);
+    grid-column: 2/3;
+    grid-row: 6/13;
+    background-position: 50% 50%;
+}
+
+.images > div:nth-child(6) {
+    background-image: url(../images/home/image_06.png);
+    grid-column: 3/4;
+    grid-row: 10/15;
+    background-position: 50% 50%;
+}
+
+.images > div:nth-child(7) {
+    background-image: url(../images/home/image_07.png);
+    grid-column: 1/2;
+    grid-row: 13/22;
+    background-position: 5% 50%;
+}
+
+.images > div:nth-child(8) {
+    background-image: url(../images/home/image_08.png);
+    grid-column: 2/3;
+    grid-row: 13/18;
+    background-position: 50% 50%;
+}
+
+.images > div:nth-child(9) {
+    background-image: url(../images/home/image_09.png);
+    grid-column: 3/4;
+    grid-row: 15/22;
+    background-position: 50% 50%;
+}
+
+.images > div:nth-child(10) {
+    background-image: url(../images/home/image_10.png);
+    grid-column: 2/3;
+    grid-row: 18/25;
+    background-position: 50% 50%;
+}
+
+.button {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 73px;
+}
+
+.button > button {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #959595;
+    font-weight: 700;
+    font-size: 13px;
+    width: 125px;
+    height: 30px;
+    border-radius: 2px;
+    border-style: none;
+}
+
+
+.repost {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 44px;
+    padding-left: 0px;
+    margin-bottom: 37px;
+}
+
+.repost > li {
+    padding-left: 57px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    position: relative;
+}
+
+.repost > li:nth-child(1) {
+    padding-left: 0px;
+}
+
+.repost > li > a {
+    color: #777777
+}
+
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 64px;
+    padding-bottom: 46px;
+}
+
+footer > p {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer > p > b {
+    color:#000000
+}
